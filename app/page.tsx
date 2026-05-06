@@ -91,7 +91,7 @@ function MatrixRain({ side }: { side: "left" | "right" }) {
     if (!ctx) return;
 
     const setup = () => {
-      const W = Math.max(60, Math.floor((window.innerWidth - 1100) / 2) + 64);
+      const W = Math.max(60, Math.floor((window.innerWidth - 1200) / 2) + 40);
       const H = window.innerHeight;
       canvas.width = W;
       canvas.height = H;
@@ -458,7 +458,7 @@ function HoloPhoto() {
         <div
           style={{
             position: "absolute",
-            inset: 3,
+            inset: 0,
             borderRadius: "50%",
             background: "#050505",
           }}
